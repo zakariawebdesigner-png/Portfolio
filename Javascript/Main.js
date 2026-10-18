@@ -32,5 +32,37 @@ Links.forEach(link=>{
 
 });
 
+import { AllCards,ViewMore } from "./Ui/Elements.js";
+
+window.addEventListener("load",()=>{
+AllCards.forEach((Card,index)=>{
+
+   if(index>=3)Card.hidden=true;
+
+});
+
+});
+
+
+import { ControllCardsVisibility } from "./Ui/Controll-ProjectsCards-Visibility.js";
+
+ViewMore.addEventListener("click",(e)=>{
+
+ControllCardsVisibility(e);
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

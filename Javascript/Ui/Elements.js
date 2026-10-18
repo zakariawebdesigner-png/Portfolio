@@ -8,7 +8,7 @@ export const NavigationBar = document.getElementById("NavigationBar");
 export const Links=NavigationBar.querySelectorAll(".Link");
 export const Dots=NavigationBar.querySelectorAll(".Dot");
 
+export const AllCards=document.querySelectorAll(".ProjectCard");
 
-
-
+export const  ViewMore=document.getElementById("ViewMore");
 
