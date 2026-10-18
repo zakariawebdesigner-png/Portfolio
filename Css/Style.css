@@ -1357,6 +1357,9 @@ width: 50%;
 }
 
 
+.mountains{
+   opacity: 0.5;
+}
 
 
 .AboutMe .Left{
@@ -1935,3 +1938,364 @@ font-size: clamp(0.6rem,1vw,1rem);
     color: rgb(0, 247, 255);
 
 }
+
+
+
+
+
+
+/* ==========================================
+   LIGHT SLATE MODE — PROJECTS, ABOUT ME & SKILLS
+   Consistent with the existing Light Slate theme
+========================================== */
+
+
+/* ==========================================
+   1. MY PROJECTS SECTION
+========================================== */
+
+body.light-mode .MyProjects {
+   color: var(--light-text);
+}
+
+body.light-mode .Line2 {
+   background-color: rgba(39, 49, 61, 0.22);
+}
+
+body.light-mode .TextAndLine .FirstText {
+   background-color: rgba(201, 35, 50, 0.10);
+   border-color: rgba(201, 35, 50, 0.45);
+   color: #A51E2A;
+}
+
+body.light-mode .FirstDiv .SecondText {
+   color: var(--light-text);
+}
+
+/* Project cards */
+
+body.light-mode .ProjectCard {
+   background: rgba(255, 255, 255, 0.24);
+
+   border: 1px solid rgba(39, 49, 61, 0.17);
+
+   box-shadow:
+      0 8px 24px rgba(39, 49, 61, 0.09),
+      inset 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+
+body.light-mode .ProjectCard:hover {
+   box-shadow:
+      0 12px 28px rgba(39, 49, 61, 0.13),
+      inset 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+
+/* Project numbers */
+
+body.light-mode .ProjectNum {
+   color: #B94B13;
+}
+
+/* Project names */
+
+body.light-mode .ProjectName {
+   color: var(--light-text);
+}
+
+/* Project types */
+
+body.light-mode .Type {
+   color: #B94B13;
+}
+
+/* Project descriptions */
+
+body.light-mode .ProjectsDiscription {
+   color: #566273;
+}
+
+/* Project links */
+
+body.light-mode .ProjectLink {
+   color: #B94B13;
+}
+
+/* Card hover effects */
+
+body.light-mode .ProjectCard:has(.ProjectLink p:hover),
+body.light-mode .ProjectCard:has(.ProjectLink i:hover) {
+   box-shadow:
+      0 4px 24px rgba(39, 49, 61, 0.16),
+      inset 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+
+/* View more button */
+
+body.light-mode .ViewMore {
+   color: var(--light-text);
+   border-color: #1689B8;
+   background-color: rgba(22, 137, 184, 0.05);
+}
+
+body.light-mode .ViewMore:hover {
+   background-color: rgba(22, 137, 184, 0.13);
+   box-shadow: 0 4px 12px rgba(22, 137, 184, 0.10);
+}
+
+/* Last text */
+
+body.light-mode .LastText p {
+   color: var(--light-muted);
+}
+
+
+/* ==========================================
+   2. ABOUT ME SECTION
+========================================== */
+
+body.light-mode .AboutMe {
+   border-top-color: rgba(69, 126, 175, 0.30);
+   border-bottom-color: rgba(69, 126, 175, 0.30);
+}
+
+/* Left-side text */
+
+body.light-mode .AboutMe .Left .Num {
+   color: #566273;
+}
+
+body.light-mode .AboutMe .Left .Text1 {
+   color: var(--light-muted);
+}
+
+body.light-mode .AboutMe .Left .Text2 {
+   color: var(--light-text);
+}
+
+body.light-mode .AboutMe .Left .Text3 {
+   color: var(--light-text);
+}
+
+/* Picture of mountains */
+
+
+body.light-mode .mountains{
+   opacity: 1;
+}
+
+
+/* Philosophy cards */
+
+body.light-mode .PhilosophyDiv {
+   background: rgba(193, 204, 218, 0.72);
+
+   border-color: rgba(39, 49, 61, 0.14);
+
+   box-shadow:
+      0 8px 24px rgba(39, 49, 61, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.40);
+}
+
+body.light-mode .PhilosophyDiv:hover {
+   box-shadow:
+      0 10px 26px rgba(39, 49, 61, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.50);
+
+   transform: translateY(-10px);
+}
+
+/* Philosophy card titles */
+
+body.light-mode .ClarityText .Text1 {
+   color: var(--light-text);
+}
+
+/* Philosophy card descriptions */
+
+body.light-mode .ClarityText .Text2 {
+   color: var(--light-muted);
+}
+
+/* Philosophy icons retain their original accent colors */
+
+body.light-mode .fa-regular.fa-eye {
+   color: #C45B2C;
+   filter: drop-shadow(0 0 5px rgba(196, 91, 44, 0.18));
+}
+
+body.light-mode .fa-solid.fa-bolt {
+   color: #285DC5;
+   filter: drop-shadow(0 0 5px rgba(40, 93, 197, 0.18));
+}
+
+body.light-mode .fa-regular.fa-star {
+   color: #9849BD;
+   filter: drop-shadow(0 0 5px rgba(152, 73, 189, 0.18));
+}
+
+/* More About button */
+
+body.light-mode .MoreAbout-Btn {
+   color: var(--light-text);
+   background-color: rgba(255, 255, 255, 0.15);
+   border-color: rgba(39, 49, 61, 0.25);
+}
+
+/* Sliding background */
+
+body.light-mode .Sliding-Inside-btn {
+   background-color: var(--light-red);
+}
+
+body.light-mode .MoreAbout-Btn:hover {
+   color: var(--light-text);
+}
+
+/* Keep the button content visible above its sliding background */
+
+body.light-mode .MoreAbout-Btn i,
+body.light-mode .MoreAbout-Btn p {
+   position: relative;
+   z-index: 3;
+}
+
+
+/* ==========================================
+   3. SKILLS SECTION
+========================================== */
+
+body.light-mode .Skills {
+   background-color: var(--light-page);
+   color: var(--light-text);
+}
+
+/* Skills introduction */
+
+body.light-mode .Skills .FirstDiv2 .TextsDiv .Text1 {
+   color: var(--light-red);
+}
+
+body.light-mode .Skills .FirstDiv2 .TextsDiv .Text2 {
+   color: var(--light-text);
+}
+
+body.light-mode .Skills .FirstDiv2 .TextsDiv .Text3 {
+   color: var(--light-muted);
+}
+
+/* Developer logo container */
+
+body.light-mode .DevLogo {
+   border-color: rgba(39, 49, 61, 0.32);
+}
+
+body.light-mode .DevLogo i {
+   color: var(--light-red);
+}
+
+/* Skills cards */
+
+body.light-mode .FrontendDev,
+body.light-mode .Ui-and-Responsivity,
+body.light-mode .Interaction {
+   background: rgba(209, 216, 225, 0.78);
+
+   border-color: rgba(39, 49, 61, 0.15);
+
+   box-shadow:
+      0 8px 24px rgba(39, 49, 61, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+/* Skill sticker — orange */
+
+body.light-mode .SkilSticker {
+   background-color: rgba(228, 132, 23, 0.12);
+   border-color: rgba(185, 100, 10, 0.30);
+}
+
+/* Skill sticker — cyan */
+
+body.light-mode .SkilSticker2 {
+   background-color: rgba(0, 160, 170, 0.09);
+   border-color: rgba(0, 130, 140, 0.30);
+}
+
+/* Skill sticker — purple */
+
+body.light-mode .SkilSticker3 {
+   background-color: rgba(160, 65, 180, 0.08);
+   border-color: rgba(145, 55, 165, 0.28);
+}
+
+/* Code icon */
+
+body.light-mode .SkilSticker .fa-solid.fa-code {
+   color: #B96A0C;
+}
+
+/* Skill descriptions */
+
+body.light-mode .SkilDiscription-Div .text1,
+body.light-mode .SkilDiscription-Div .text2 {
+   color: var(--light-text);
+}
+
+body.light-mode .SkilDiscription-Div .text3 {
+   color: var(--light-muted);
+}
+
+/* Divider */
+
+body.light-mode .Line3 {
+   background-color: rgba(39, 49, 61, 0.18);
+}
+
+/* Technology labels */
+
+body.light-mode .Html,
+body.light-mode .Css,
+body.light-mode .Js {
+   background-color: rgba(255, 255, 255, 0.28);
+   border-color: rgba(39, 49, 61, 0.20);
+   color: #566273;
+}
+
+/* Project diagram icon */
+
+body.light-mode .fas.fa-project-diagram {
+   color: #9849BD;
+}
+
+/* Layer group icon */
+
+body.light-mode .fas.fa-layer-group {
+   color: #087F94;
+}
+
+/* Skill card images */
+
+body.light-mode .Frontend-Pic,
+body.light-mode .ResponsivityPic,
+body.light-mode .Interactive-Developement {
+   box-shadow: 0 3px 12px rgba(39, 49, 61, 0.15);
+}
+
+
+/* ==========================================
+   4. LIGHT MODE SCROLLBARS
+========================================== */
+
+body.light-mode .MyProjects *,
+body.light-mode .AboutMe *,
+body.light-mode .Skills * {
+   scrollbar-color: #8998AA transparent;
+}
+
+
+
+
+
+
+
+
