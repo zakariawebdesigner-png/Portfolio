@@ -12,3 +12,5 @@ export const AllCards=document.querySelectorAll(".ProjectCard");
 
 export const  ViewMore=document.getElementById("ViewMore");
 
+export const  LightModePic=document.querySelector(".ContactMe-Pic2");
+export const  DarkModePic=document.querySelector(".ContactMe-Pic");

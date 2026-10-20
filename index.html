@@ -25,23 +25,16 @@
 
 <nav class="NavigationBar" id="NavigationBar">
 
- <a class="Link" href="#Home">
-   <p>Home</p> 
-    <div class="Dot"></div>
-</a>
- <a class="Link" href="#Home">
+ <a class="Link" href="#MyProjects">
     <p>Work</p>
      <div class="Dot"></div>
 </a>
- <a class="Link" href="#Home">
+ <a class="Link" href="#AboutMe">
     <p>About</p>
      <div class="Dot"></div>
 </a>
- <a class="Link" href="#Home">
-    <p>Process</p>
-     <div class="Dot"></div>
-</a>
- <a class="Link" href="#Home">
+
+ <a class="Link" href="#ContactMe">
     <p>Contact</p>
     <div class="Dot"></div>
 </a>
@@ -71,7 +64,7 @@
 </div>
 
 
-<button class="LestTalkBtn">
+<button class="LestTalkBtn" onclick="window.scrollTo({top:document.querySelector('#ContactMe').offsetTop, behavior:'smooth'})">
     <p>Let's talk</p>
     <i class="fa-solid fa-arrow-right"></i>
 </button>
@@ -107,13 +100,13 @@ Creative Front-End Developer and UI Designer crafting modern, responsive website
 
       <div class="ButtonsDiv">
 
-        <button class="ExploreBtn">
+        <button class="ExploreBtn" onclick="window.scrollTo({top: document.querySelector('#MyProjects').offsetTop,behavior: 'smooth'})">
              <p>Explore my work</p>
             <i  class="fa-solid  fa-arrow-right"></i>
 
             </button>
         
-        <button class="AboutBtn">
+        <button class="AboutBtn" onclick="window.scrollTo({ top:document.querySelector('#AboutMe').offsetTop,behavior:'smooth' })">
             <p>About me</p>
             <p class="Emojie">😎</p>
         </button>
@@ -284,7 +277,7 @@ Creative Front-End Developer and UI Designer crafting modern, responsive website
 
 
 
-<section class="AboutMe">
+<section class="AboutMe" id="AboutMe">
 
          <img class="mountains" src="./Photos/mountains.jpg"  width="100%" height="100%"  alt="Mountais picture">
 
@@ -443,9 +436,187 @@ Creative Front-End Developer and UI Designer crafting modern, responsive website
 </section>
 
 
-<section class="ContactMe">
+<section class="ContactMe" id="ContactMe">
+
+<div class="Top">
+    <div class="Texts">
+        <p class="Text1">04/ LET'S CONNECT</p>
+        <p class="Text2">Contact <span style="color: red;">Me.</span></p>
+        <p class="Text3">Have an idea in mind? Let's turn it into something exxeptional.</p>
+        <p class="Text4">Tell me what you are working on.</p>
+
+        
+    </div>
+    <div class="SmallText-AtRight">
+        <div class="Text">
+            <p> <span style="color: rgb(169, 229, 66);">⏺</span> Oppen to projects</p>
+        </div>
+    </div>
+</div>
 
 
+
+<div class="HowToContact-Holder">
+
+<div class="Left">
+
+         <div class="Top">
+                 <i class="fa-solid fa-envelope"></i>
+                 <div class="Text">
+                    <p class="SendText">Send me a message</p>
+                    <p class="SendLongText">Fill in the form bellow and I'll get  back to you as soon as possible.</p>
+                 </div>
+          </div>
+
+        
+          <form class="InputsDiv"  id="InputsDiv">
+               <div class="Name-Surname-InputsDiv">
+                             <div class="NameDiv">
+                                       <label for="Name" class="NameLabel">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>First name</p>
+                                       </label>
+                            <input id="Name"  class="Name" type="text" placeholder="Your first name" minlength="1"  maxlength="15" required >
+                             </div>
+                        
+                           
+                          <div class="SurnameDiv">
+                                 <label for="Surname" class="SurnameLabel">
+                                     <i class="fa-regular fa-user"></i>
+                                        <p>Surname</p>
+                                 </label>
+                          <input id="Surname" class="Surname" type="text" placeholder="Your surname" minlength="1"  maxlength="15" required >
+                          </div>
+                          
+                         
+                </div>
+
+               <div class="EmailDiv1">
+
+                            <label for="Email" class="EmailLabel">
+                                     <i class="fa-regular fa-envelope"></i>
+                                        <p>Email</p>
+                                 </label>
+                          <input id="Email" class="EmailInput" type="email" placeholder="YourEmail@gmail.com" minlength="1" required >
+
+
+               </div>
+
+                <div class="MessageDiv">
+                             <label for="Message" class="MessageLabel">
+                                     <i class="fa-regular fa-envelope"></i>
+                                        <p>Your message</p>
+                                 </label>
+                          <textarea id="Message" class="Message" name="message"  placeholder="Tell me about your idea,project,or request.... " minlength="10"  maxlength="500" required ></textarea>
+
+                 </div>
+
+
+           <div class="ButtonDiv">
+                         <button type="submit" class="Send">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <p>Send Message</p>
+                    <i class="fa-solid  fa-arrow-right Arrow"></i>
+                   </button>
+
+                     <div class="Itags">
+                   <div class="FacebookDiv">
+                   <a href="https://www.facebook.com/share/1EfC6oxf4Z/">
+                     <i class="fa-brands fa-facebook Facebook"></i>
+                   </a>
+                   </div> 
+                <a href="https://github.com/zakariawebdesigner-png">
+                     <i class="fa-brands fa-github Github2"></i>
+                </a>
+                  <a href="https://wa.me/213558745167?text=Hello%2C%20I%20found%20your%20portfolio">
+                    <i  class="fa-brands fa-whatsapp  WhatUp3"></i>
+                  </a>
+                     </div>
+                 
+
+            </div>
+                 
+
+
+                </form>
+
+
+
+</div>
+
+
+<div class="Line4"></div>
+
+
+
+<div class="Right">
+    <img class="ContactMe-Pic" src="./Photos/ContactMe-Pic.jpg" width="100%" height="70%" alt="Picture of the Contact me container that contain a beatifull view while working on pc ">
+    <img class="ContactMe-Pic2" src="./Photos/ContactMe-Pic2.png" width="100%" height="70%" alt="Picture of the Contact me container that contain a beatifull view while working on pc ">
+
+<div class="BottomDiv">
+
+     <div class="FirstDivOf-Contact-Container">
+            <div class="Rocked-StickerDiv">
+                 <i class="fa-solid fa-rocket"></i>
+            </div>
+        <div class="TextsSide">
+            <p class="Text1">HAVE A PROJECT IN MIND?</p>
+            <p class="Text2">Let's build something great.</p>
+            <p class="Text3">From a clean landing page to a fully interactive web experience.</p>
+            <p class="Text4">Let's make your idea real.</p>
+        </div>
+        
+     </div>
+
+<div class="Contacts-And-WorkingPlatforms">
+    <div class="EmailDiv">
+         <i class="fa-regular fa-envelope"></i>
+         <div class="TextsDiv">
+            <p class="EmailText">Email</p>
+            <p class="Email">zakariawebdeveloper@gmail.com</p>
+         </div>
+    </div>
+    <div class="GitHubDiv">
+                <a href="https://github.com/zakariawebdesigner-png" target="blank">
+                     <i class="fa-brands fa-github"></i>
+                </a>
+         <div class="TextsDiv">
+            <p class="GitHubText">GitHub</p>
+            <p class="GitHub">zakariawebdesigner-png</p>
+         </div>
+    </div>
+    <div class="WhatsUpDiv">
+                  <i class="fa-brands fa-whatsapp"></i>
+         <div class="TextsDiv">
+            <p class="WhatsUpText">Whats Up</p>
+            <p class="WhatsUp">0558745167</p>
+         </div>
+    </div>
+</div>
+
+</div>
+
+
+</div>
+
+<!-- From Uiverse.io by dexter-st --> 
+<div class="loader-wrapper" id="loader-wrapper">
+  <span class="loader-letter">G</span>
+  <span class="loader-letter">e</span>
+  <span class="loader-letter">n</span>
+  <span class="loader-letter">e</span>
+  <span class="loader-letter">r</span>
+  <span class="loader-letter">a</span>
+  <span class="loader-letter">t</span>
+  <span class="loader-letter">i</span>
+  <span class="loader-letter">n</span>
+  <span class="loader-letter">g</span>
+
+  <div class="loader"></div>
+</div>
+
+
+</div>
 
 
 </section>
@@ -456,5 +627,8 @@ Creative Front-End Developer and UI Designer crafting modern, responsive website
 
 
 </body>
+<script
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
 <script type="module" src="./Javascript/Main.js"></script>
 </html>
