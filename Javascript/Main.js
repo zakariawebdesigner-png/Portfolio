@@ -5,6 +5,39 @@ import { LightMode,DarkMode,CheckTheMode } from "./Ui/Theme.js";
 
 import { ClickedLinkStyle } from "./Ui/LinksStyle.js";
 
+// Reveal content as it enters the viewport, while keeping the page usable
+// in browsers without IntersectionObserver and for reduced-motion users.
+const revealSelectors = [
+  ".MyProjects > .FirstDiv",
+  ".ProjectsContainer > .ProjectCard",
+  ".MyProjects > .LastText",
+  ".AboutMe > .Left",
+  ".AboutMe > .PhilosophyDivs-Container",
+  ".AboutMe > .MoreAbout-Btn",
+  ".Skills > .FirstDiv2",
+  ".SkilsDiv > div",
+  ".ContactMe > .Top",
+  ".HowToContact-Holder > *",
+  "footer > *"
+];
+
+if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  const revealItems = document.querySelectorAll(revealSelectors.join(","));
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle("is-visible", entry.isIntersecting);
+    });
+  }, { threshold: 0.14, rootMargin: "0px 0px -40px 0px" });
+
+  revealItems.forEach((item, index) => {
+    item.classList.add("scroll-reveal");
+    if (item.matches(".ProjectCard, .SkilsDiv > div")) {
+      item.style.setProperty("--reveal-delay", `${(index % 4) * 90}ms`);
+    }
+    revealObserver.observe(item);
+  });
+}
+
 
 
 
