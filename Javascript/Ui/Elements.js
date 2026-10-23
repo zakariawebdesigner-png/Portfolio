@@ -14,3 +14,11 @@ export const  ViewMore=document.getElementById("ViewMore");
 
 export const  LightModePic=document.querySelector(".ContactMe-Pic2");
 export const  DarkModePic=document.querySelector(".ContactMe-Pic");
+
+export const PhilosophyDiv_Array=document.querySelectorAll(".PhilosophyDiv");
+export const  MoreAbout_Btn=document.getElementById("MoreAbout-Btn");
+export const  LeftOfAbout=document.getElementById("LeftOfAbout");
+
+export const  Detailed_Discription=document.getElementById("Detailed-Discription");
+export const  PhilosophyDivs_Container=document.getElementById("PhilosophyDivs-Container");
+

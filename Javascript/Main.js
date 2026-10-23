@@ -1,5 +1,5 @@
 
-import { SunDiv,MoonDiv,Links } from "./Ui/Elements.js";
+import { SunDiv,MoonDiv,Links,AllCards,ViewMore,MoreAbout_Btn } from "./Ui/Elements.js";
 
 import { LightMode,DarkMode,CheckTheMode } from "./Ui/Theme.js";
 
@@ -80,7 +80,6 @@ Links.forEach(link=>{
 
 });
 
-import { AllCards,ViewMore } from "./Ui/Elements.js";
 window.addEventListener("load",()=>{
 AllCards.forEach((Card,index)=>{
 
@@ -142,9 +141,12 @@ form.addEventListener("submit", function (e) {
     });
 });
 
+import { MoreInfoVisibility } from "./Ui/MoreInformations-Appearence-Controll.js";
+MoreAbout_Btn.addEventListener("click",()=>{
 
+  MoreInfoVisibility();
 
-
+});
 
 
 
