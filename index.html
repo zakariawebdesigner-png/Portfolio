@@ -70,6 +70,34 @@
 </button>
 
 
+<i class="fa-solid  fa-bars" id="ToggleNav-Btn"></i>
+
+<nav id="NavBar"  class="NavigationBar-ON-Phones">
+
+
+ <a  href="#MyProjects">
+            <i class="fa-solid fa-briefcase"></i>
+    <p>Work</p>
+     
+</a>
+
+ <a  href="#AboutMe">
+    <i class="fa-solid fa-user"></i>
+    <p>About</p>
+    
+</a>
+
+ <a  href="#ContactMe">
+    <i class="fa-solid fa-envelope"></i>
+    <p>Contact</p>
+    
+</a>
+
+
+</nav>
+
+
+
 </div>
 
 
@@ -94,8 +122,11 @@
             I dont just build web sites .
         </p>
         <p class="WhatIBuild">I build <span style="color: #FF0000;">experiences</span></p>
-        <p class="MyJob-Discription">
-Creative Front-End Developer and UI Designer crafting modern, responsive websites with clean code, intuitive designs, and engaging user experiences.        </p>
+        <div class="MyJob-DiscriptionDiv">
+                       <p class="MyJob-Discription">
+Creative Front-End Developer and UI Designer crafting modern, responsive websites with clean code, intuitive designs, and engaging user experiences.</p>
+        </div>
+       
       </div>
 
       <div class="ButtonsDiv">
@@ -116,7 +147,7 @@ Creative Front-End Developer and UI Designer crafting modern, responsive website
 
 </div>
 
-    <img class="Developer-Pic" src="./Photos/DeveloperPic.png" style="transform: scale(1.3) translate(-50%,-50%);  left: 55%; position: absolute; object-fit: cover; background-position:center top; z-index: 1;">
+    <img class="Developer-Pic" src="./Photos/DeveloperPic.png">
 
 
 
@@ -171,15 +202,26 @@ Creative Front-End Developer and UI Designer crafting modern, responsive website
         
         <div class="WhatCanIdoDiv">
                    <div class="TextsDiv">
-                             <p class="Tittle">What  can i do for you</p>
-                              <p class="Discription">I build modern websites with clean code, intuitive design, and smooth interactions that engage users.</p>
+                             <p id="Tittle-WhatI-Can-Do" class="Tittle">What  can i do for you</p>
+                              <p id="Discription-WhatI-Can-Do" class="Discription">I build modern websites with clean code, intuitive design, and smooth interactions that engage users.</p>
                    </div>
-                     
-                   <button>
+                       <button id="Button-WhatI-Can-Do" class="Button-WhatI-Can-Do">
                     <i class="fa-solid fa-arrow-right"></i>
                    </button>
-                   
+             
+
         </div>
+          <!--This Appear just on phones and small screens(Line 214 to 225 )-->
+         <div class="Passion">
+                             <div class="bi-bi-grid-Div">
+                                 <i class="bi bi-grid"></i>
+                             </div> 
+                           <div class="TextsDiv">
+                                 <p class="Text">100%</p>
+                               <p class="Text">Passion</p>
+                            </div>
+                         <div class="Line"></div>
+                    </div>
     </div>
 </div>
 
@@ -558,14 +600,13 @@ Creative Front-End Developer and UI Designer crafting modern, responsive website
 
 
 
-<div class="Right">
-    <img class="ContactMe-Pic" src="./Photos/ContactMe-Pic.jpg" width="100%" height="70%" alt="Picture of the Contact me container that contain a beatifull view while working on pc ">
-    <img class="ContactMe-Pic2" src="./Photos/ContactMe-Pic2.png" width="100%" height="70%" alt="Picture of the Contact me container that contain a beatifull view while working on pc ">
+<div class="Right" id="Right">
+    <img class="ContactMe-Pic" src="./Photos/ContactMe-Pic.jpg" width="99%" height="70%" alt="Picture of the Contact me container that contain a beatifull view while working on pc ">
 
 <div class="BottomDiv">
 
      <div class="FirstDivOf-Contact-Container">
-            <div class="Rocked-StickerDiv">
+            <div class="Rocket-StickerDiv">
                  <i class="fa-solid fa-rocket"></i>
             </div>
         <div class="TextsSide">

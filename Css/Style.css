@@ -43,6 +43,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.107);
 .Name{
    text-wrap: nowrap;
 
+
  
 }
 
@@ -61,7 +62,7 @@ height: 100%;
 }
 
 
-@media (max-width:900px) {
+@media (max-width:1020px) {
 
 .NavigationBar{
     display: none;
@@ -137,6 +138,7 @@ max-width: 25%;
  padding-right: 0.5rem;
  box-sizing: border-box;
 gap: 1rem;
+
 }
 
 
@@ -230,6 +232,127 @@ cursor: pointer;
 
 
 
+.fa-solid.fa-bars{
+   position: relative;
+color: white;
+display: none;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+padding: 0.3rem;
+border-radius: 0.3rem;
+cursor: pointer;
+}
+
+
+
+.fa-solid.fa-bars:hover{
+background-color: white;
+color: black;
+}
+
+
+.NavigationBar-ON-Phones{
+position: absolute;
+display: none;
+top: 4rem;
+right: 0.2rem;
+width: clamp(3rem,11vw,7rem);
+   height: clamp(5rem,13vw,15rem);
+   padding-left: 0.3rem;
+   justify-content: center;
+  gap: 1rem;
+   box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0.5rem;
+padding: 0.3rem;z-index: 2;
+transform: translateX(100vw);
+transition: 0.5s ease;
+}
+
+.NavigationBar-ON-Phones  a{
+   text-decoration: none;
+
+   cursor: pointer;
+
+    margin: 0;
+    
+    
+}
+
+
+
+.NavigationBar-ON-Phones  a p{
+     color: rgba(255, 255, 255, 0.725);
+    margin: 0;
+    font-family: var(--Font-Familly);
+    font-size: clamp(0.5rem,1.5vw,0.8rem);
+
+}
+
+
+.ToggleNavBr{
+transform: translateX(0);
+}
+
+
+
+
+@media (max-width:1020px){
+
+.LestTalkBtn{
+
+   display: none;
+
+}
+
+
+.fa-solid.fa-bars{
+color: white;
+display: flex;
+
+}
+
+
+
+.NavigationBar-ON-Phones{
+display: flex;
+flex-direction: column;
+
+}
+
+
+.NavigationBar-ON-Phones a{
+display: flex;
+align-items: center;
+gap: 0.5rem;
+
+}
+
+
+.NavigationBar-ON-Phones a  i{
+color: white;
+    font-size: clamp(0.5rem,1.5vw,0.8rem);
+}
+
+
+
+
+}
+
+
+
+
+
+
 .LestTalkBtn p{
 
 color: white;
@@ -241,8 +364,6 @@ font-size: clamp(0.6rem,1vw,0.8rem);
 color: white;
 
 }
-
-
 
 .AvailableText p{
 
@@ -266,12 +387,20 @@ width: 100%;
 
 
 .Developer-Pic{
+    position: absolute;
     top: 23rem;
+    left: 55%;
+    transform: scale(1.3) translate(-50%,-50%);
 width:clamp(20rem,40vw,30rem); 
 height:clamp(20rem,43vw,35rem);
 user-select: none;
 filter: drop-shadow(0 12px 75px rgba(255, 1, 1, 0.874));
+background-position:center top;
+object-fit: cover;
+z-index: 1;
 }
+
+
 
 
 .RightPic{
@@ -284,9 +413,9 @@ user-select: none;
 @media (max-width:1700px){
 
 .Developer-Pic{
-    top: clamp(10rem,34vw,23rem);
+    top: clamp(10rem,25vw,20rem);
     
-width:clamp(8rem,30vw,25rem); 
+width:clamp(8rem,30vw,26rem); 
 height:clamp(8rem,40vw,45rem);
 }
 
@@ -336,6 +465,41 @@ position: relative;
 }
 
 
+
+
+@media (max-width:1020px) {
+
+
+.RightPic{
+   display: none;
+}
+
+
+
+.Developer-Pic{
+   position: absolute;
+    top: 16rem;
+    left: 75%;
+    transform: scale(1.6) translate(-50%,-50%);
+width:clamp(14rem,20vw,30rem); 
+height:clamp(14rem,20vw,30rem);
+user-select: none;
+filter: drop-shadow(0 12px 75px rgba(255, 1, 1, 0.874));
+background-position:center top;
+object-fit: cover;
+z-index: 1;
+}
+
+
+}
+
+.MyJob-DiscriptionDiv{
+   display: flex;
+   flex: 1;
+   
+}
+
+
 .TextDiv1{
    display: flex;
    flex-direction: column;
@@ -343,27 +507,31 @@ position: relative;
    height: fit-content;
    padding-left: 1rem;
    box-sizing: border-box;
+ 
 }
 
 
 .TextDiv1 p{
   margin-right: 0;
 margin-bottom: 0;
+
 }
 
 
 .Text1-left{
    font-family:'Press Start 2P';
      line-height: 2rem;
-     font-size: clamp(0.7rem,0.8vw,1.3rem);
+     font-size: clamp(0.4rem,0.8vw,1.3rem);
      color: white;
+     
+     ;
 }
 
 
 .NameInsideCta{
    margin-top: 0;
       font-family: 'Isometra';
-          font-size: clamp(2rem,6vw,6rem);
+          font-size: clamp(1.3rem,6vw,6rem);
           color: rgb(0, 0, 0);
           background-color: red;
 
@@ -383,7 +551,7 @@ height: fit-content;
 
 .Whats-My-Job{
 width: 48%;
-font-size:clamp(0.7rem,2.3vw,2.5rem);
+font-size:clamp(0.5rem,2.1vw,2.5rem);
 font-family: var(--Font-Familly);
 font-weight: 600;
 margin-top: 0;
@@ -396,7 +564,7 @@ color: white;
 
 
 .WhatIBuild{
-font-size:clamp(0.7rem,2.3vw,2.5rem);
+font-size:clamp(0.5rem,2.1vw,2.5rem);
 font-family: var(--Font-Familly);
 font-weight: 600;
 margin-top: 0;
@@ -413,8 +581,8 @@ box-sizing: border-box;
    height: fit-content;
    color: rgba(255, 255, 255, 0.614);
    font-family: var(--Font-Familly);
-   font-size: clamp(0.9rem,1vw,1.5rem);
-   flex-wrap: nowrap;
+   font-size: clamp(0.3rem,1vw,1.5rem);
+  
    padding-left: 3rem;
 
 }
@@ -536,7 +704,6 @@ transition: 0.5s  ease;
    align-items: center;
    width: 100%;
    height:clamp(5rem,15vw,13rem);
-   
 }
 
 
@@ -547,10 +714,11 @@ transition: 0.5s  ease;
 
    position: absolute;
     display: flex;
-    width: clamp(30rem,90vw,90rem);
+    width: clamp(40rem,90vw,90rem);
     height: clamp(5rem,11vw,9rem);
      align-items: center;
      overflow: hidden;
+     
 background: radial-gradient(
     circle at top right,
     rgba(126, 219, 255, 0.24),
@@ -570,6 +738,52 @@ background: radial-gradient(
 } 
 
 
+
+
+.Passion{
+position: relative;
+ display: none;
+ width: 23%;
+ height:100%;
+ justify-content: center;
+ gap: 1rem;
+  font-size: 2rem;
+}
+
+
+
+
+.Passion .TextsDiv{
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   height: 92%;
+   justify-content: center;
+
+   
+}
+
+
+.Passion .TextsDiv .Text:nth-child(1){
+
+margin: 0;
+font-size: clamp(0.8rem,2vw,1.7rem);
+font-weight: 600;
+font-family: var(--Font-Familly);
+color: rgb(255, 0, 0);
+}
+
+
+
+.Passion .TextsDiv .Text:nth-child(2){
+
+margin: 0;
+font-size: clamp(0.4rem,1.03vw,1rem);
+font-family: var(--Font-Familly);
+ color: white;
+
+}
+
 .ProjectsNumDiv{
 position: relative;
  display: flex;
@@ -579,6 +793,9 @@ position: relative;
  gap: 1rem;
   font-size: 2rem;
 }
+
+
+
 
 .ProjectsNumDiv .TextsDiv{
    display: flex;
@@ -618,7 +835,7 @@ font-family: var(--Font-Familly);
    align-items: center;
    justify-content: center;
    align-self: center;
- background: rgba(255, 255, 255, 0.08);
+ background: rgba(225, 12, 12, 0.08);
 backdrop-filter: blur(12px);
 -webkit-backdrop-filter: blur(12px);
 border: 1px solid rgba(255, 255, 255, 0.15);
@@ -640,14 +857,12 @@ border: 1px solid rgba(255, 255, 255, 0.15);
 
 
 
-
 .LanguagesDiv{
 position: relative;
  display: flex;
  justify-content: center;
  width: 23%;
  height:100%;
-
  gap: 1rem;
   font-size: 2rem;
 
@@ -668,7 +883,7 @@ position: relative;
 .LanguagesText{
 
  font-family: var(--Font-Familly);
- font-size: clamp(0.6rem,0.8vw,1rem);      
+ font-size: clamp(0.5rem,1vw,1rem);      
    color: rgba(255, 255, 255, 0.48);
    padding-top: 0.1rem;
    box-sizing: border-box;
@@ -689,7 +904,7 @@ color: rgb(255, 0, 0);
 .ProjectsNumDiv .TextsDiv .Text:nth-child(2){
 
 margin: 0;
-font-size: clamp(0.5rem,1vw,1rem);
+font-size: clamp(0.4rem,1.03vw,1rem);
 font-family: var(--Font-Familly);
  color: white;
 
@@ -758,6 +973,7 @@ font-family: var(--Font-Familly);
  width: 31%;
  height:100%;
  gap: 1.5rem;
+
 }
 
 .WhatCanIdoDiv .TextsDiv{
@@ -768,6 +984,8 @@ height: 100%;
 justify-content: center;
 padding-left: 1rem;
 gap: 0.5rem;
+
+
 box-sizing: border-box;
 }
 
@@ -785,7 +1003,7 @@ color: white;
 
 .WhatCanIdoDiv .TextsDiv .Discription{
 
-font-size: clamp(0.5rem,1vw,0.95rem);
+font-size: clamp(0.4rem,1vw,0.95rem);
 margin: 0;
 font-family: var(--Font-Familly);
 padding-left: 0.5rem;
@@ -806,10 +1024,157 @@ background-color: #00ffe55a;
 }
 
 
+
+@media (max-width:1020px) {
+
+  .Line{
+   display: none;
+  }
+
+
+}
+
+
+
+@media (max-width:864px) {
+
+   .Statistics-and-InformationsDiv{
+    display: grid;
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
+    width: clamp(18rem,50vw,50rem);
+    height: 30vw;
+     
+    max-height: 10rem;
+
+    justify-items: stretch;
+    align-items: stretch;
+    
+}
+
+
+
+.NationalityDiv{
+position: relative;
+ display: flex;
+flex: 1;
+width: auto;
+ justify-content: center;
+ gap: 1rem;
+  font-size: 2rem;
+}
+
+
+
+.LanguagesDiv{
+position: relative;
+ display: flex;
+ justify-content: center;
+flex: 1;
+width: auto;
+ gap: 1rem;
+  font-size: 2rem;
+
+}
+
+
+
+.ProjectsNumDiv{
+
+flex: 1;
+width: auto;
+
+}
+
+
+.Button-WhatI-Can-Do{
+   display: none;
+}
+
+
+.Cta{
+   min-height: 100vh;
+}
+
+
+
+
+.Cta-bottom{
+   flex: 1;
+}
+
+.Cta{
+   max-height: 80vh;
+}
+
+.Developer-Pic{
+      top:11rem;
+      left: 83%;
+   background-color: #94240818;
+   border-radius: 0.5rem;
+   z-index: -1;
+   width:clamp(7rem,30vw,26rem); 
+height:clamp(9rem,40vw,45rem);
+
+}
+
+
+
+
+.WhatCanIdoDiv{
+
+ display: none;
+ align-items: center;
+flex: 1;
+width: auto;
+ gap: 1.5rem;
+
+}
+
+.Passion{
+   display: flex;
+
+width: auto;
+
+}
+
+
+.NationalityDiv{
+ 
+width: auto;
+
+}
+
+
+
+.MyJob-Discription{
+ 
+  
+   padding-left: 1rem;
+
+}
+
+
+.Whats-My-Job{
+
+
+padding-left: 1rem;
+
+}
+
+
+.WhatIBuild{
+   padding-left: 1rem;
+}
+
+}
+
+
+
 .WhatCanIdoDiv  button{
 
 width:clamp(1rem,5vw,2rem) ;
-height:clamp(0.5rem,5vw,2rem) ;
+height:clamp(0.5rem,3vw,2rem) ;
 border-radius: 2rem;
 border: 1px solid rgba(255, 255, 255, 0.333);
 background-color: rgba(0, 238, 255, 0.068);
@@ -1387,6 +1752,7 @@ width: 50%;
 }
 
 
+
 @keyframes SlideRight {
    0%{
        transform: translateX(-100vw);
@@ -1453,6 +1819,7 @@ width: 50%;
    max-width: 97rem;
    min-width: 20rem;
    height: 55%;
+   min-height: fit-content;
    align-items: center;
     background: rgba(255, 255, 255, 0.07);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -1812,8 +2179,8 @@ flex-wrap: wrap;
    position: relative;
 display: flex;
 flex-direction: column;
-width: clamp(25rem,30vw,30rem);
-height: clamp(15rem,18vw,25rem);
+width: clamp(20rem,30vw,30rem);
+height: clamp(13rem,18vw,25rem);
 justify-content: space-around;
 flex-shrink: 0;
     background: rgba(35, 49, 70, 0.62);
@@ -1827,7 +2194,6 @@ flex-shrink: 0;
 padding: 0.5rem;
 
 }
-
 
 
 
@@ -2416,8 +2782,9 @@ body.light-mode .Skills * {
    display: flex;
    flex-direction: column;
    width: 100%;
-   height: 100vh;
+   height: auto;
    gap: 5rem;
+   padding-bottom: 0.8rem;
 }
 
 
@@ -2523,7 +2890,7 @@ font-size: clamp(0.6rem,1vw,0.9rem);
 
    display: flex;
    width: clamp(48rem,68vw,65rem);
-   height: clamp(25rem,30vw,30rem);
+   height: clamp(25rem,38vw,30rem);
    align-self: center;
    border: 1px solid rgba(255, 255, 255, 0.517);
    border-radius: 0.6rem;
@@ -2548,6 +2915,7 @@ display: flex;
 flex-direction: column;
 flex: 1;
 align-items: center;
+
 padding-top: 0.1rem;
 box-sizing: border-box;
 
@@ -2555,17 +2923,6 @@ box-sizing: border-box;
 
 
 
-body.light-mode  .ContactMe-Pic{
-border-top-left-radius:0.4rem;
-border-top-right-radius:0.4rem;
-display: none;
-}
-
-body.light-mode .ContactMe-Pic2{
-border-top-left-radius:0.4rem;
-border-top-right-radius:0.4rem;
-display: flex;
-}
 
 .HowToContact-Holder .Right .BottomDiv{
    position: absolute;
@@ -2586,19 +2943,21 @@ box-sizing: border-box;
    display: flex;
    width:100%;
    height: 70%;
+         
 }
 
 
 
- .Rocked-StickerDiv{
+ .Rocket-StickerDiv{
    display: flex;
     width:12%;
   height: 100%;
+ 
 }
 
 
 
- .Rocked-StickerDiv i{
+ .Rocket-StickerDiv i{
 
 margin: 0.7rem;
 background-color: #fd000025;
@@ -2616,6 +2975,7 @@ border-radius: 0.5rem;
    flex-direction: column;
    flex: 1;
 padding-top: 0.5rem;
+padding-left: 0.5rem;
 box-sizing: border-box;
 }
 
@@ -2821,7 +3181,7 @@ color: rgba(255, 255, 255, 0.908);
 
 .SendLongText{
    margin-top: 0;
-   font-size: clamp(0.4rem,0.9vw,0.7rem);
+   font-size: clamp(0.4rem,0.85vw,0.7rem);
    font-family: var(--Font-Familly);
    color: rgba(255, 255, 255, 0.513);
 

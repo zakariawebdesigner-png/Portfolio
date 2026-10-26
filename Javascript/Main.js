@@ -43,12 +43,6 @@ if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-mot
 
 
 
-
-
-
-
-
-
 SunDiv.addEventListener("click",(e)=>{
 
 if(!e.currentTarget.closest(".SunDiv") && !e.currentTarget.closest("button") && !e.currentTarget.closest("i") )return;
@@ -85,12 +79,9 @@ AllCards.forEach((Card,index)=>{
 
    if(index>=3)Card.hidden=true;
 
-});
-
 CheckTheMode(document.body.className);
 
-
-
+});
 
 });
 
@@ -152,5 +143,15 @@ MoreAbout_Btn.addEventListener("click",()=>{
 
 
 
+
+
+import { ToggleNav_Btn,Discription_WhatI_Can_Do,Tittle_WhatI_Can_Do } from "../Phones/Ui/Elements.js";
+
+import { MoveNaveBar } from "../Phones/Ui/NavBar-Appearence.js";
+ToggleNav_Btn.addEventListener("click",()=>{
+
+MoveNaveBar();
+
+});
 
 
