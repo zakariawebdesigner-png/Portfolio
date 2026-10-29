@@ -4077,6 +4077,22 @@ body.light-mode .loader-wrapper {
 }
  
    .Line4 { display: none; }
+
+
+.loader-wrapper {
+
+  left: 24%;
+  top:7rem;
+
+}
+
+
+
+
+
+
+
+
 }
 
 @media (max-width: 380px) {
