@@ -382,7 +382,6 @@ display: flex;
 flex-direction: column;
 width: 100%;
 
-
 }
 
 
@@ -493,12 +492,6 @@ z-index: 1;
 
 }
 
-.MyJob-DiscriptionDiv{
-   display: flex;
-   flex: 1;
-   
-}
-
 
 .TextDiv1{
    display: flex;
@@ -576,13 +569,25 @@ box-sizing: border-box;
 }
 
 
+
+.MyJob-DiscriptionDiv{
+   display: flex;
+ width: clamp(10rem,30vw,20rem);
+   height:clamp(6rem,8vw,9rem);
+   margin: 0;
+}
+
+
+
+
+
 .MyJob-Discription{
-   width: 50%;
+
    height: fit-content;
    color: rgba(255, 255, 255, 0.614);
    font-family: var(--Font-Familly);
-   font-size: clamp(0.3rem,1vw,1.5rem);
-  
+   font-size: clamp(0.5rem,0.9vw,1rem);
+  margin: 0;
    padding-left: 3rem;
 
 }
@@ -623,7 +628,6 @@ height: fit-content;
 .ExploreBtn:hover{
  background-color: #638EAC;
 }
-
 
 
 
@@ -1038,6 +1042,15 @@ background-color: #00ffe55a;
 
 @media (max-width:864px) {
 
+
+.Right-and-LeftDiv{
+   display: flex;
+   width: 100%;
+   height: 43%;
+
+}
+
+
    .Statistics-and-InformationsDiv{
     display: grid;
      grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1093,7 +1106,7 @@ width: auto;
 
 
 .Cta{
-   min-height: 100vh;
+ height: 70vh;
 }
 
 
@@ -1101,6 +1114,9 @@ width: auto;
 
 .Cta-bottom{
    flex: 1;
+   max-height:30vh;
+   align-items: flex-start;
+   padding-top: 0.5rem;
 }
 
 .Cta{
@@ -1108,13 +1124,13 @@ width: auto;
 }
 
 .Developer-Pic{
-      top:11rem;
+      top:13rem;
       left: 83%;
-   background-color: #94240818;
+ 
    border-radius: 0.5rem;
    z-index: -1;
-   width:clamp(7rem,30vw,26rem); 
-height:clamp(9rem,40vw,45rem);
+   width:clamp(7rem,25vw,25rem); 
+height:clamp(9rem,27vw,30rem);
 
 }
 
