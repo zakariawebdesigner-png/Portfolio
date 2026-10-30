@@ -1816,7 +1816,7 @@ width: 100%;
    width: 100%;
 flex-wrap: wrap;
    height: 30vw;
-   min-height: 20rem;
+   min-height: 25rem;
   border-top: 2px solid  rgba(90, 159, 216, 0.495);
     border-bottom: 2px solid  rgba(90, 159, 216, 0.544);
 
