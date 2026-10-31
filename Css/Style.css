@@ -393,7 +393,7 @@ position: relative;
 display: flex;
 flex-direction: column;
 width: 100%;
-
+min-height: 27rem;
 }
 
 
@@ -1507,6 +1507,7 @@ body.light-mode .WhatCanIdoDiv * {
    flex-direction: column;
    width:100%;
 
+   
   
 
 }
@@ -1541,7 +1542,7 @@ body.light-mode .WhatCanIdoDiv * {
 
 .TextAndLine   .FirstText{
    text-align: center;
-width: clamp(3rem,10vw,9rem);
+width: clamp(5rem,10vw,9rem);
 height: fit-content;
 padding-top:0.2rem ;
 padding-bottom:0.2rem ;
@@ -1550,7 +1551,8 @@ border: 2px solid rgb(237, 71, 71);
 background-color:rgba(246, 68, 68, 0.415);
 color: rgba(255, 255, 255, 0.889);
 font-family: var(--Font-Familly);
-font-size:clamp(0.5rem,1vw,0.8rem) ;
+font-size:clamp(0.48rem,1vw,0.8rem) ;
+
 }
 
 
